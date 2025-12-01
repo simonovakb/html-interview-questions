@@ -276,3 +276,53 @@
   `tabindex`, `title`, `alt`, а также правильная структура навигации и заголовков.
 
 </details>
+
+<details>
+  <summary>40. В чём разница между &lt;b&gt; и &lt;strong&gt;?</summary>
+
+  - <b>&lt;b&gt;</b> - просто визуально выделяет текст жирным, без дополнительного смысла (presentational).
+  - <strong>&lt;strong&gt;</strong> - подчеркивает важность (semantic), сообщает скринридерам о акценте, может влиять на SEO и доступность.
+
+</details>
+
+<details>
+  <summary>41. В чём разница между &lt;i&gt; и &lt;em&gt;?</summary>
+
+  - <i>&lt;i&gt;</i> — меняет стиль на курсив, не несёт семантики (presentational).  
+  - <em>&lt;em&gt;</em> — выделяет акцент, смысловой упор, делает текст более заметным для вспомогательных технологий.
+
+</details>
+
+<details>
+  <summary>42. В чём практическая разница между &lt;strong&gt;, &lt;em&gt;, &lt;mark&gt;?</summary>
+
+  - <strong>&lt;strong&gt;</strong> — важность, акцент для a11y (скринридеров), SEO.  
+  - <em>&lt;em&gt;</em> — смысловой акцент, интонация.  
+  - <mark>&lt;mark&gt;</mark> — визуальное выделение фона, обычно для поиска или подсветки.
+
+</details>
+
+<details>
+  <summary>43. Отличие между &lt;button&gt; и &lt;input type="button"&gt;?</summary>
+
+  - <button>&lt;button&gt;</button> может содержать HTML (иконки, текст), поддерживает любые вложенные элементы, атрибуты `type` ("button", "submit", "reset"), стилизуется простым CSS и более гибок для a11y.
+  - <input type="button" /> отображает только текст (через value), нельзя вставить HTML внутри, есть только `type="button"` (нет submit/reset). Менее гибок для стилизации и доступности.
+
+</details>
+
+
+<details>
+  <summary>44. Когда использовать &lt;button&gt;, а когда &lt;input type="button"&gt;?</summary>
+
+  - Для современных веб-приложений — рекомендуется `<button/>` (гибкость, доступность, вложения, поддержка submit/reset).  
+  - `<input type="button"/>` — для простых сценариев, совместимости с очень старым кодом.
+
+</details>
+
+<details>
+  <summary>45. Как влияет выбор между presentational и semantic elements на доступность?</summary>
+
+  - Семантические теги (`<strong>`, `<em>`, `<button>`) увеличивают доступность и корректную работу вспомогательных технологий.
+  - Presentational (`<b>`, `<i>`, `<input type="button">`) только визуально изменяют текст, не добавляя смысл.
+
+</details>
